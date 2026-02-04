@@ -1,11 +1,4 @@
-create database datawarehouse;
-use datawarehouse;
-create schema bronze;
-create schema silver;
-create schema gold;
-DROP TABLE bronze.crm_cust_info;
-
-create qureis
+--queries  to  create qureis
 
 CREATE TABLE bronze.crm_cust_info(
 cst_id int,
@@ -58,7 +51,7 @@ CREATE TABLE bronze.erp_px_cat_g1v2 (
     maintenance  NVARCHAR(50)
 );
 
-insert quries
+--Queries to insert in Tables
 
 BULK INSERT bronze.crm_cust_info
 from 'D:\acciojob\Sql\datasets\source_crm\cust_info.csv'
